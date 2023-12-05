@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>sin(),cos()関数による円運動</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "8-9.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+	<div class="code">
+		<p>　　	float angle=0.0;
+		<p>　　	float offset=60;
+		<p>　　	float scalar=40;
+		<p>　　	float speed=0.05;
+		<p>　　	　
+		<p>　　	void setup(){
+		<p>　　	　size(120, 120);
+		<p>　　	}　
+		<p>　　	　
+		<p>　　	　void draw(){
+		<p>　　	　　float x=offset+cos(angle)*scalar;
+		<p>　　	　　float y=offset+sin(angle)*scalar;
+		<p>　　	　　ellipse(x, y, 40, 40);
+		<p>　　	　　angle+=speed;
+		<p>　　	　}
+	</div>
+	</div>
+</div>
+
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　sin(),cos()関数は正弦（sin）、余弦（cos）を求める関数である。
+	<p>　
+	<p>　sin()とcos()を組み合わせると、円運動を作ることができる。
+	<p>　cos()がx座標の、sin()がy座標の基となる。
+	<p>　2つの値に変数scalarを掛けて回転の半径を変更し、変数offsetを加えて回転の中心を移動させる。
+</div>
+
+</body>
+
+
